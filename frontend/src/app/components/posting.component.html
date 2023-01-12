@@ -1,0 +1,35 @@
+<img [src]="posting.image" alt="">
+<table>
+    <tr>
+        <td>Posting Id:</td>
+        <td>{{ posting.postingId }}</td>
+    </tr>
+    <tr>
+        <td>Posting Date:</td>
+        <td>{{ posting.postingDate }}</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>{{ posting.name }}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{ posting.email }}</td>
+    </tr>
+    <tr>
+        <td>Phone:</td>
+        <td>{{ posting.phone }}</td>
+    </tr>
+    <tr>
+        <td>Title:</td>
+        <td>{{ posting.title }}</td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td>{{ posting.description }}</td>
+    </tr>
+    <tr>
+        <td><button [routerLink]="['/']">Cancel</button></td>
+        <td><button (click)="confirmPost()">Confirm</button></td>
+    </tr>
+</table>

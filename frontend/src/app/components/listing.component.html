@@ -1,0 +1,34 @@
+<h1>Listing</h1>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+    <table>
+        <tr>
+            <td>Name: </td>
+            <td><input type="text" formControlName="name"></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="text" formControlName="email"></td>
+        </tr>
+        <tr>
+            <td>Phone: </td>
+            <td><input type="text" formControlName="phone"></td>
+        </tr>
+        <tr>
+            <td>Title: </td>
+            <td><input type="text" formControlName="title"></td>
+        </tr>
+        <tr>
+            <td>Description: </td>
+            <td><input type="text" formControlName="description"></td>
+        </tr>
+        <tr>
+            <td>Image: </td>
+            <input type="file" accept="image/*" formControlName="file" #file >
+        </tr>
+        <tr>
+            <td><button type="reset">Clear</button></td>
+            <td><button type="submit" [disabled]="form.invalid">Post</button></td>
+        </tr>
+    </table>
+</form>
